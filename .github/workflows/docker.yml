@@ -11,7 +11,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.0.1
+      - uses: actions/checkout@v2.4.1
       - uses: zbeekman/ShellCheck-Linter-Action@v1.0.1
       - name: Install Bats
         run: |
