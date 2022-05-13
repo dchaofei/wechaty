@@ -11,8 +11,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.1
-      - uses: zbeekman/ShellCheck-Linter-Action@v1.0.1
+      - uses: actions/checkout@v2
+      - uses: reviewdog/action-shellcheck@v1
       - name: Install Bats
         run: |
           curl -sSL -o /tmp/bats_v0.4.0.tar.gz https://github.com/sstephenson/bats/archive/v0.4.0.tar.gz
